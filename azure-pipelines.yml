@@ -27,5 +27,10 @@ steps:
     command: 'apply'
     environmentServiceName: 'Visual Studio Enterprise Subscription(502fc577-2449-4567-8e36-18e78edd019b)'
     allowTelemetryCollection: true
-
+- task: TerraformCLI@1
+  displayName: Terraform Destroy
+  inputs:
+    command: 'destroy'
+    environmentServiceName: 'Visual Studio Enterprise Subscription(502fc577-2449-4567-8e36-18e78edd019b)'
+    allowTelemetryCollection: true
  
